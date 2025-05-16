@@ -2,7 +2,6 @@ import joblib
 import streamlit as st
 import numpy as np 
 import pandas as pd
-import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 import plotly.graph_objs as go
 
@@ -10,7 +9,7 @@ import plotly.graph_objs as go
 st.title('Multiple Regression Model to Predict Price of Home')
 
 # Load model and data
-model = joblib.load(r"artifacts/multiple_reg.joblib")  # use raw string or forward slashes
+model = joblib.load(r"artifacts\multiple_reg.joblib")  # use raw string or forward slashes
 df = pd.read_csv("home_prices.csv")
 
 col1, col2 = st.columns(2)
