@@ -9,7 +9,7 @@ import plotly.graph_objs as go
 st.title('Multiple Regression Model to Predict Price of Home')
 
 # Load model and data
-model = joblib.load(r"artifacts\multiple_reg.joblib")  # use raw string or forward slashes
+model = joblib.load("artifacts\multiple_reg.joblib")  # use raw string or forward slashes
 df = pd.read_csv("home_prices.csv")
 
 col1, col2 = st.columns(2)
